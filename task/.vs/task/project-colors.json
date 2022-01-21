@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "6a8d6b5c-b7b1-4bd6-bacf-3661b7c686da": {
+      "ProjectGuid": "6a8d6b5c-b7b1-4bd6-bacf-3661b7c686da",
+      "DisplayName": "task",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

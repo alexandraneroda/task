@@ -1,0 +1,11 @@
+E:\Savushkin\task\task\task\bin\Debug\task.exe.config
+E:\Savushkin\task\task\task\bin\Debug\task.exe
+E:\Savushkin\task\task\task\bin\Debug\task.pdb
+E:\Savushkin\task\task\task\obj\Debug\task.csproj.AssemblyReference.cache
+E:\Savushkin\task\task\task\obj\Debug\task.csproj.SuggestedBindingRedirects.cache
+E:\Savushkin\task\task\task\obj\Debug\task.Properties.Resources.resources
+E:\Savushkin\task\task\task\obj\Debug\task.csproj.GenerateResource.cache
+E:\Savushkin\task\task\task\obj\Debug\task.csproj.CoreCompileInputs.cache
+E:\Savushkin\task\task\task\obj\Debug\task.exe
+E:\Savushkin\task\task\task\obj\Debug\task.pdb
+E:\Savushkin\task\task\task\obj\Debug\task.Form1.resources
