@@ -39,16 +39,19 @@
             this.buttonInLua = new System.Windows.Forms.Button();
             this.buttonOnLua = new System.Windows.Forms.Button();
             this.buttonSort = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.TableDevaces = new System.Windows.Forms.DataGridView();
-            this.TableProperties = new System.Windows.Forms.DataGridView();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TableDevaces)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TableProperties)).BeginInit();
+            this.Devaices = new System.Windows.Forms.DataGridView();
+            this.ProDevices = new System.Windows.Forms.DataGridView();
+            this.NumberProperties = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Properties = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Meaning = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameOne = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.Devaices)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProDevices)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonAdd
@@ -172,15 +175,6 @@
             this.buttonSort.Text = "Сортировка";
             this.buttonSort.UseVisualStyleBackColor = false;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel2.Controls.Add(this.TableProperties);
-            this.panel2.Location = new System.Drawing.Point(448, 59);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(389, 239);
-            this.panel2.TabIndex = 12;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -199,32 +193,65 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Свойства";
             // 
-            // panel1
+            // Devaices
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Controls.Add(this.TableDevaces);
-            this.panel1.Location = new System.Drawing.Point(12, 59);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(383, 239);
-            this.panel1.TabIndex = 11;
+            this.Devaices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Devaices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Number,
+            this.Type,
+            this.NameOne,
+            this.Cost});
+            this.Devaices.Location = new System.Drawing.Point(12, 58);
+            this.Devaices.Name = "Devaices";
+            this.Devaices.Size = new System.Drawing.Size(447, 240);
+            this.Devaices.TabIndex = 15;
             // 
-            // TableDevaces
+            // ProDevices
             // 
-            this.TableDevaces.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.TableDevaces.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TableDevaces.Location = new System.Drawing.Point(3, 3);
-            this.TableDevaces.Name = "TableDevaces";
-            this.TableDevaces.Size = new System.Drawing.Size(370, 64);
-            this.TableDevaces.TabIndex = 0;
+            this.ProDevices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ProDevices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NumberProperties,
+            this.Properties,
+            this.Meaning});
+            this.ProDevices.Location = new System.Drawing.Point(466, 58);
+            this.ProDevices.Name = "ProDevices";
+            this.ProDevices.Size = new System.Drawing.Size(371, 240);
+            this.ProDevices.TabIndex = 16;
             // 
-            // TableProperties
+            // NumberProperties
             // 
-            this.TableProperties.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.TableProperties.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TableProperties.Location = new System.Drawing.Point(4, 4);
-            this.TableProperties.Name = "TableProperties";
-            this.TableProperties.Size = new System.Drawing.Size(373, 63);
-            this.TableProperties.TabIndex = 0;
+            this.NumberProperties.HeaderText = "№";
+            this.NumberProperties.Name = "NumberProperties";
+            // 
+            // Properties
+            // 
+            this.Properties.HeaderText = "Свойство";
+            this.Properties.Name = "Properties";
+            // 
+            // Meaning
+            // 
+            this.Meaning.HeaderText = "Значение";
+            this.Meaning.Name = "Meaning";
+            // 
+            // Number
+            // 
+            this.Number.HeaderText = "№";
+            this.Number.Name = "Number";
+            // 
+            // Type
+            // 
+            this.Type.HeaderText = "Тип";
+            this.Type.Name = "Type";
+            // 
+            // NameOne
+            // 
+            this.NameOne.HeaderText = "Название";
+            this.NameOne.Name = "NameOne";
+            // 
+            // Cost
+            // 
+            this.Cost.HeaderText = "Цена";
+            this.Cost.Name = "Cost";
             // 
             // Form1
             // 
@@ -232,10 +259,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(849, 450);
+            this.Controls.Add(this.ProDevices);
+            this.Controls.Add(this.Devaices);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonSort);
             this.Controls.Add(this.buttonOnLua);
             this.Controls.Add(this.buttonInLua);
@@ -249,10 +276,8 @@
             this.Controls.Add(this.buttonAdd);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.TableDevaces)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TableProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Devaices)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProDevices)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,12 +296,17 @@
         private System.Windows.Forms.Button buttonInLua;
         private System.Windows.Forms.Button buttonOnLua;
         private System.Windows.Forms.Button buttonSort;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView TableProperties;
-        private System.Windows.Forms.DataGridView TableDevaces;
+        private System.Windows.Forms.DataGridView Devaices;
+        private System.Windows.Forms.DataGridView ProDevices;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumberProperties;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Properties;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Meaning;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Number;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameOne;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cost;
     }
 }
 
