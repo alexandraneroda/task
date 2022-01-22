@@ -28,148 +28,154 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonDelet = new System.Windows.Forms.Button();
+            this.buttonAdd1 = new System.Windows.Forms.Button();
+            this.buttonAdd2 = new System.Windows.Forms.Button();
+            this.buttonInExel = new System.Windows.Forms.Button();
+            this.buttonInXml = new System.Windows.Forms.Button();
+            this.buttonInJson = new System.Windows.Forms.Button();
+            this.buttonOnJson = new System.Windows.Forms.Button();
+            this.buttonInLua = new System.Windows.Forms.Button();
+            this.buttonOnLua = new System.Windows.Forms.Button();
+            this.buttonSort = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.TableDevaces = new System.Windows.Forms.DataGridView();
+            this.TableProperties = new System.Windows.Forms.DataGridView();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TableDevaces)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TableProperties)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonAdd
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(12, 304);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonAdd.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAdd.Location = new System.Drawing.Point(12, 304);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd.TabIndex = 0;
+            this.buttonAdd.Text = "Добавить";
+            this.buttonAdd.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // buttonDelet
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.Location = new System.Drawing.Point(93, 304);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Удалить\r\n";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonDelet.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonDelet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDelet.Location = new System.Drawing.Point(93, 304);
+            this.buttonDelet.Name = "buttonDelet";
+            this.buttonDelet.Size = new System.Drawing.Size(75, 23);
+            this.buttonDelet.TabIndex = 1;
+            this.buttonDelet.Text = "Удалить\r\n";
+            this.buttonDelet.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // buttonAdd1
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button3.Location = new System.Drawing.Point(479, 304);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Добавить\r\n";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonAdd1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonAdd1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAdd1.Location = new System.Drawing.Point(479, 304);
+            this.buttonAdd1.Name = "buttonAdd1";
+            this.buttonAdd1.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd1.TabIndex = 2;
+            this.buttonAdd1.Text = "Добавить\r\n";
+            this.buttonAdd1.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // buttonAdd2
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button4.Location = new System.Drawing.Point(560, 304);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Удалить";
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonAdd2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonAdd2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAdd2.Location = new System.Drawing.Point(560, 304);
+            this.buttonAdd2.Name = "buttonAdd2";
+            this.buttonAdd2.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd2.TabIndex = 3;
+            this.buttonAdd2.Text = "Удалить";
+            this.buttonAdd2.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // buttonInExel
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button5.Location = new System.Drawing.Point(12, 333);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Выгрузить в EXEL";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonInExel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonInExel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonInExel.Location = new System.Drawing.Point(12, 333);
+            this.buttonInExel.Name = "buttonInExel";
+            this.buttonInExel.Size = new System.Drawing.Size(125, 23);
+            this.buttonInExel.TabIndex = 4;
+            this.buttonInExel.Text = "Выгрузить в EXEL";
+            this.buttonInExel.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // buttonInXml
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button6.Location = new System.Drawing.Point(143, 333);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(114, 23);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Выгрузить в XML";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.buttonInXml.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonInXml.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonInXml.Location = new System.Drawing.Point(143, 333);
+            this.buttonInXml.Name = "buttonInXml";
+            this.buttonInXml.Size = new System.Drawing.Size(114, 23);
+            this.buttonInXml.TabIndex = 5;
+            this.buttonInXml.Text = "Выгрузить в XML";
+            this.buttonInXml.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // buttonInJson
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button7.Location = new System.Drawing.Point(263, 333);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(122, 23);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Выгрузить в JSON";
-            this.button7.UseVisualStyleBackColor = false;
+            this.buttonInJson.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonInJson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonInJson.Location = new System.Drawing.Point(263, 333);
+            this.buttonInJson.Name = "buttonInJson";
+            this.buttonInJson.Size = new System.Drawing.Size(122, 23);
+            this.buttonInJson.TabIndex = 6;
+            this.buttonInJson.Text = "Выгрузить в JSON";
+            this.buttonInJson.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // buttonOnJson
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button8.Location = new System.Drawing.Point(263, 362);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(122, 23);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Загрузить из JSON";
-            this.button8.UseVisualStyleBackColor = false;
+            this.buttonOnJson.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonOnJson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOnJson.Location = new System.Drawing.Point(263, 362);
+            this.buttonOnJson.Name = "buttonOnJson";
+            this.buttonOnJson.Size = new System.Drawing.Size(122, 23);
+            this.buttonOnJson.TabIndex = 7;
+            this.buttonOnJson.Text = "Загрузить из JSON";
+            this.buttonOnJson.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // buttonInLua
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button9.Location = new System.Drawing.Point(391, 333);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(117, 23);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Выгрузить из LUA";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.buttonInLua.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonInLua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonInLua.Location = new System.Drawing.Point(391, 333);
+            this.buttonInLua.Name = "buttonInLua";
+            this.buttonInLua.Size = new System.Drawing.Size(117, 23);
+            this.buttonInLua.TabIndex = 8;
+            this.buttonInLua.Text = "Выгрузить в LUA";
+            this.buttonInLua.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // buttonOnLua
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button10.Location = new System.Drawing.Point(391, 362);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(117, 23);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "Загрузить из LUA";
-            this.button10.UseVisualStyleBackColor = false;
+            this.buttonOnLua.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonOnLua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOnLua.Location = new System.Drawing.Point(391, 362);
+            this.buttonOnLua.Name = "buttonOnLua";
+            this.buttonOnLua.Size = new System.Drawing.Size(117, 23);
+            this.buttonOnLua.TabIndex = 9;
+            this.buttonOnLua.Text = "Загрузить из LUA";
+            this.buttonOnLua.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // buttonSort
             // 
-            this.button11.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button11.Location = new System.Drawing.Point(182, 23);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "Сортировка";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Location = new System.Drawing.Point(12, 59);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(383, 239);
-            this.panel1.TabIndex = 11;
+            this.buttonSort.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonSort.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSort.Location = new System.Drawing.Point(182, 23);
+            this.buttonSort.Name = "buttonSort";
+            this.buttonSort.Size = new System.Drawing.Size(75, 23);
+            this.buttonSort.TabIndex = 10;
+            this.buttonSort.Text = "Сортировка";
+            this.buttonSort.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel2.Controls.Add(this.TableProperties);
             this.panel2.Location = new System.Drawing.Point(448, 59);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(389, 239);
@@ -193,6 +199,33 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Свойства";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.TableDevaces);
+            this.panel1.Location = new System.Drawing.Point(12, 59);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(383, 239);
+            this.panel1.TabIndex = 11;
+            // 
+            // TableDevaces
+            // 
+            this.TableDevaces.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.TableDevaces.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TableDevaces.Location = new System.Drawing.Point(3, 3);
+            this.TableDevaces.Name = "TableDevaces";
+            this.TableDevaces.Size = new System.Drawing.Size(370, 64);
+            this.TableDevaces.TabIndex = 0;
+            // 
+            // TableProperties
+            // 
+            this.TableProperties.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.TableProperties.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TableProperties.Location = new System.Drawing.Point(4, 4);
+            this.TableProperties.Name = "TableProperties";
+            this.TableProperties.Size = new System.Drawing.Size(373, 63);
+            this.TableProperties.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,19 +236,23 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonSort);
+            this.Controls.Add(this.buttonOnLua);
+            this.Controls.Add(this.buttonInLua);
+            this.Controls.Add(this.buttonOnJson);
+            this.Controls.Add(this.buttonInJson);
+            this.Controls.Add(this.buttonInXml);
+            this.Controls.Add(this.buttonInExel);
+            this.Controls.Add(this.buttonAdd2);
+            this.Controls.Add(this.buttonAdd1);
+            this.Controls.Add(this.buttonDelet);
+            this.Controls.Add(this.buttonAdd);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TableDevaces)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TableProperties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,21 +260,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Button buttonDelet;
+        private System.Windows.Forms.Button buttonAdd1;
+        private System.Windows.Forms.Button buttonAdd2;
+        private System.Windows.Forms.Button buttonInExel;
+        private System.Windows.Forms.Button buttonInXml;
+        private System.Windows.Forms.Button buttonInJson;
+        private System.Windows.Forms.Button buttonOnJson;
+        private System.Windows.Forms.Button buttonInLua;
+        private System.Windows.Forms.Button buttonOnLua;
+        private System.Windows.Forms.Button buttonSort;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView TableProperties;
+        private System.Windows.Forms.DataGridView TableDevaces;
     }
 }
 
