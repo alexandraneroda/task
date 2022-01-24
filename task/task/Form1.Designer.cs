@@ -42,14 +42,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Devaices = new System.Windows.Forms.DataGridView();
-            this.ProDevices = new System.Windows.Forms.DataGridView();
-            this.NumberProperties = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Properties = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Meaning = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameOne = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProDevices = new System.Windows.Forms.DataGridView();
+            this.NumberProperties = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Properties = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Meaning = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Devaices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProDevices)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +64,7 @@
             this.buttonAdd.TabIndex = 0;
             this.buttonAdd.Text = "Добавить";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            //this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonDelet
             // 
@@ -178,7 +179,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 23);
+            this.label1.Location = new System.Drawing.Point(9, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 13;
@@ -187,7 +188,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(448, 23);
+            this.label2.Location = new System.Drawing.Point(463, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 14;
@@ -205,6 +206,26 @@
             this.Devaices.Name = "Devaices";
             this.Devaices.Size = new System.Drawing.Size(447, 240);
             this.Devaices.TabIndex = 15;
+            // 
+            // Number
+            // 
+            this.Number.HeaderText = "№";
+            this.Number.Name = "Number";
+            // 
+            // Type
+            // 
+            this.Type.HeaderText = "Тип";
+            this.Type.Name = "Type";
+            // 
+            // NameOne
+            // 
+            this.NameOne.HeaderText = "Название";
+            this.NameOne.Name = "NameOne";
+            // 
+            // Cost
+            // 
+            this.Cost.HeaderText = "Цена";
+            this.Cost.Name = "Cost";
             // 
             // ProDevices
             // 
@@ -232,26 +253,6 @@
             // 
             this.Meaning.HeaderText = "Значение";
             this.Meaning.Name = "Meaning";
-            // 
-            // Number
-            // 
-            this.Number.HeaderText = "№";
-            this.Number.Name = "Number";
-            // 
-            // Type
-            // 
-            this.Type.HeaderText = "Тип";
-            this.Type.Name = "Type";
-            // 
-            // NameOne
-            // 
-            this.NameOne.HeaderText = "Название";
-            this.NameOne.Name = "NameOne";
-            // 
-            // Cost
-            // 
-            this.Cost.HeaderText = "Цена";
-            this.Cost.Name = "Cost";
             // 
             // Form1
             // 
