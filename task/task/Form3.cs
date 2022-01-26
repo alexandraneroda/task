@@ -14,6 +14,7 @@ namespace task
     {
         Form1 fgrid;
         public Form3(Form1 fg)
+
         {
             InitializeComponent();
 

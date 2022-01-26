@@ -80,3 +80,4 @@ D:\savushkin\task\task\task\obj\Debug\task.csproj.CopyComplete
 D:\savushkin\task\task\task\obj\Debug\task.exe
 D:\savushkin\task\task\task\obj\Debug\task.pdb
 D:\savushkin\task\task\task\obj\Debug\task.Form3.resources
+D:\savushkin\task\task\task\obj\Debug\task.FormProperties.resources

@@ -91,6 +91,7 @@
             this.buttonAdd1.TabIndex = 2;
             this.buttonAdd1.Text = "Добавить\r\n";
             this.buttonAdd1.UseVisualStyleBackColor = false;
+            this.buttonAdd1.Click += new System.EventHandler(this.buttonAdd1_Click);
             // 
             // buttonAdd2
             // 
@@ -103,6 +104,7 @@
             this.buttonAdd2.TabIndex = 3;
             this.buttonAdd2.Text = "Удалить";
             this.buttonAdd2.UseVisualStyleBackColor = false;
+            this.buttonAdd2.Click += new System.EventHandler(this.buttonAdd2_Click);
             // 
             // buttonInExel
             // 
@@ -327,7 +329,6 @@
         private System.Windows.Forms.Button buttonSort;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView ProDevicesDataGredView;
         private System.Windows.Forms.DataGridViewTextBoxColumn NumberProperties;
         private System.Windows.Forms.DataGridViewTextBoxColumn Properties;
         private System.Windows.Forms.DataGridViewTextBoxColumn Meaning;
@@ -336,6 +337,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NameOne;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cost;
         public System.Windows.Forms.DataGridView DevicesDataGridView;
+        public System.Windows.Forms.DataGridView ProDevicesDataGredView;
     }
 }
 
