@@ -24,12 +24,23 @@ namespace task
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             Form3 frm3 = new Form3(this); 
-            frm3.Show(); 
+            frm3.Show();
         }
 
         private void buttonDelet_Click(object sender, EventArgs e)
         {
             DevicesDataGridView.Rows.Clear();
+        }
+
+        private void buttonAdd1_Click(object sender, EventArgs e)
+        {
+            FormProperties frmpr = new FormProperties(this);
+            frmpr.Show();
+        }
+
+        private void buttonAdd2_Click(object sender, EventArgs e)
+        {
+            ProDevicesDataGredView.Rows.Clear();
         }
     }
 }
