@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using XAct.Library.Settings;
 
 namespace task
 {
@@ -22,18 +21,11 @@ namespace task
 
         }
 
-       /* private void buttonAdd_Click(object sender, EventArgs e)
+        private void buttonAdd_Click(object sender, EventArgs e)
         {
-            string AddDevices = AddNewDevices.Text;
-
-            DB db = new Db();
-
-            DataTable table = new DataTable();
-
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `devices`");
+            Form3 frm3 = new Form3(this); 
+            frm3.Show(); 
         }
-        */
+
     }
 }
