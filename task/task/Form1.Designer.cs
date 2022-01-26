@@ -78,6 +78,7 @@
             this.buttonDelet.TabIndex = 1;
             this.buttonDelet.Text = "Удалить\r\n";
             this.buttonDelet.UseVisualStyleBackColor = false;
+            this.buttonDelet.Click += new System.EventHandler(this.buttonDelet_Click);
             // 
             // buttonAdd1
             // 

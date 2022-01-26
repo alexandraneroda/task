@@ -27,5 +27,9 @@ namespace task
             frm3.Show(); 
         }
 
+        private void buttonDelet_Click(object sender, EventArgs e)
+        {
+            DevicesDataGridView.Rows.Clear();
+        }
     }
 }
