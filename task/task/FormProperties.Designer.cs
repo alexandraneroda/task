@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.AddPrButton = new System.Windows.Forms.Button();
             this.TextBoxMean = new System.Windows.Forms.TextBox();
             this.TextBoxPro = new System.Windows.Forms.TextBox();
             this.TextBoxN = new System.Windows.Forms.TextBox();
             this.labelMean = new System.Windows.Forms.Label();
             this.labelPropertie = new System.Windows.Forms.Label();
             this.labelNumberProperties = new System.Windows.Forms.Label();
-            this.AddPrButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // AddPrButton
+            // 
+            this.AddPrButton.Location = new System.Drawing.Point(161, 180);
+            this.AddPrButton.Name = "AddPrButton";
+            this.AddPrButton.Size = new System.Drawing.Size(114, 23);
+            this.AddPrButton.TabIndex = 6;
+            this.AddPrButton.Text = "Добавить";
+            this.AddPrButton.UseVisualStyleBackColor = true;
+            this.AddPrButton.Click += new System.EventHandler(this.AddPrButton_Click);
             // 
             // TextBoxMean
             // 
@@ -75,6 +85,7 @@
             this.TextBoxN.Name = "TextBoxN";
             this.TextBoxN.Size = new System.Drawing.Size(243, 22);
             this.TextBoxN.TabIndex = 3;
+            
             // 
             // labelMean
             // 
@@ -102,16 +113,6 @@
             this.labelNumberProperties.Size = new System.Drawing.Size(53, 16);
             this.labelNumberProperties.TabIndex = 0;
             this.labelNumberProperties.Text = "Номер:";
-            // 
-            // AddPrButton
-            // 
-            this.AddPrButton.Location = new System.Drawing.Point(161, 180);
-            this.AddPrButton.Name = "AddPrButton";
-            this.AddPrButton.Size = new System.Drawing.Size(114, 23);
-            this.AddPrButton.TabIndex = 6;
-            this.AddPrButton.Text = "Добавить";
-            this.AddPrButton.UseVisualStyleBackColor = true;
-            this.AddPrButton.Click += new System.EventHandler(this.AddPrButton_Click);
             // 
             // FormProperties
             // 
