@@ -18,6 +18,10 @@ namespace task
             InitializeComponent();
 
             this.frmpr = fp;
+
+            KeyPreview = true;
+
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Enter) AddPrButton_Click(AddPrButton, null); };
         }
         public FormProperties()
         {
@@ -26,10 +30,8 @@ namespace task
 
         private void AddPrButton_Click(object sender, EventArgs e)
         {
-            //SendKeys.Send(TextBoxN.Text, TextBoxPro.Text, TextBoxMean.Text);
-
-            //SendKeys.Send("{ENTER}");
             frmpr.ProDevicesDataGredView.Rows.Add(TextBoxN.Text, TextBoxPro.Text, TextBoxMean.Text);
         }
+
     }
 }

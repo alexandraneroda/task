@@ -19,11 +19,16 @@ namespace task
             InitializeComponent();
 
             this.fgrid = fg;
+
+            KeyPreview = true;
+
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Enter) AddButton_Click(AddButton, null); };
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
             fgrid.DevicesDataGridView.Rows.Add(NumberTextBox.Text, TypeTextBox.Text, NameTextBox.Text, CostTextBox.Text);
         }
+
     }
 }

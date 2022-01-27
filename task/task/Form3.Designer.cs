@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.AddingDataGroupBox = new System.Windows.Forms.GroupBox();
+            this.AddButton = new System.Windows.Forms.Button();
             this.CostTextBox = new System.Windows.Forms.TextBox();
             this.NameTextBox = new System.Windows.Forms.TextBox();
             this.TypeTextBox = new System.Windows.Forms.TextBox();
@@ -37,7 +38,6 @@
             this.NameLabel = new System.Windows.Forms.Label();
             this.TypeLabel = new System.Windows.Forms.Label();
             this.Numberlabel = new System.Windows.Forms.Label();
-            this.AddButton = new System.Windows.Forms.Button();
             this.AddingDataGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +60,17 @@
             this.AddingDataGroupBox.TabIndex = 0;
             this.AddingDataGroupBox.TabStop = false;
             this.AddingDataGroupBox.Text = "groupBox1";
+            // 
+            // AddButton
+            // 
+            this.AddButton.Location = new System.Drawing.Point(166, 205);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(118, 47);
+            this.AddButton.TabIndex = 8;
+            this.AddButton.Text = "Добавить";
+            this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            
             // 
             // CostTextBox
             // 
@@ -124,16 +135,6 @@
             this.Numberlabel.Size = new System.Drawing.Size(53, 16);
             this.Numberlabel.TabIndex = 0;
             this.Numberlabel.Text = "Номер:";
-            // 
-            // AddButton
-            // 
-            this.AddButton.Location = new System.Drawing.Point(166, 205);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(118, 47);
-            this.AddButton.TabIndex = 8;
-            this.AddButton.Text = "Добавить";
-            this.AddButton.UseVisualStyleBackColor = true;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // Form3
             // 
