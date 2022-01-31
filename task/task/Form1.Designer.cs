@@ -294,6 +294,8 @@
             this.DevicesDataGridView.Size = new System.Drawing.Size(576, 295);
             this.DevicesDataGridView.TabIndex = 19;
             this.DevicesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DevicesDataGridView_CellContentClick);
+            this.DevicesDataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DevicesDataGridView_CellValueChanged);
+            this.DevicesDataGridView.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.DevicesDataGridView_EditingControlShowing);
             this.DevicesDataGridView.UserAddedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.DevicesDataGridView_UserAddedRow);
             // 
             // toolStripButton1
