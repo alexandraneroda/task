@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonDelet = new System.Windows.Forms.Button();
             this.buttonAdd1 = new System.Windows.Forms.Button();
@@ -41,17 +42,20 @@
             this.buttonSort = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.DevicesDataGridView = new System.Windows.Forms.DataGridView();
-            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NameOne = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProDevicesDataGredView = new System.Windows.Forms.DataGridView();
             this.NumberProperties = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Properties = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Meaning = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.DevicesDataGridView)).BeginInit();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.DevicesDataGridView = new System.Windows.Forms.DataGridView();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.ProDevicesDataGredView)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DevicesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonAdd
@@ -182,7 +186,7 @@
             // 
             this.buttonSort.BackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonSort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSort.Location = new System.Drawing.Point(243, 28);
+            this.buttonSort.Location = new System.Drawing.Point(273, 374);
             this.buttonSort.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSort.Name = "buttonSort";
             this.buttonSort.Size = new System.Drawing.Size(100, 28);
@@ -209,46 +213,6 @@
             this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 14;
             this.label2.Text = "Свойства";
-            // 
-            // DevicesDataGridView
-            // 
-            this.DevicesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DevicesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DevicesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Number,
-            this.Type,
-            this.NameOne,
-            this.Cost});
-            this.DevicesDataGridView.Location = new System.Drawing.Point(16, 71);
-            this.DevicesDataGridView.Margin = new System.Windows.Forms.Padding(4);
-            this.DevicesDataGridView.Name = "DevicesDataGridView";
-            this.DevicesDataGridView.RowHeadersWidth = 51;
-            this.DevicesDataGridView.Size = new System.Drawing.Size(608, 295);
-            this.DevicesDataGridView.TabIndex = 15;
-            // 
-            // Number
-            // 
-            this.Number.HeaderText = "№";
-            this.Number.MinimumWidth = 6;
-            this.Number.Name = "Number";
-            // 
-            // Type
-            // 
-            this.Type.HeaderText = "Тип";
-            this.Type.MinimumWidth = 6;
-            this.Type.Name = "Type";
-            // 
-            // NameOne
-            // 
-            this.NameOne.HeaderText = "Название";
-            this.NameOne.MinimumWidth = 6;
-            this.NameOne.Name = "NameOne";
-            // 
-            // Cost
-            // 
-            this.Cost.HeaderText = "Цена";
-            this.Cost.MinimumWidth = 6;
-            this.Cost.Name = "Cost";
             // 
             // ProDevicesDataGredView
             // 
@@ -283,14 +247,74 @@
             this.Meaning.MinimumWidth = 6;
             this.Meaning.Name = "Meaning";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.файлToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1173, 28);
+            this.menuStrip1.TabIndex = 17;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // файлToolStripMenuItem
+            // 
+            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.выходToolStripMenuItem});
+            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.файлToolStripMenuItem.Text = "Файл";
+            // 
+            // выходToolStripMenuItem
+            // 
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.выходToolStripMenuItem.Text = "Выход";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1173, 27);
+            this.toolStrip1.TabIndex = 18;
+            this.toolStrip1.Text = "Обновить";
+            // 
+            // DevicesDataGridView
+            // 
+            this.DevicesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DevicesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DevicesDataGridView.Location = new System.Drawing.Point(16, 71);
+            this.DevicesDataGridView.Name = "DevicesDataGridView";
+            this.DevicesDataGridView.RowHeadersWidth = 51;
+            this.DevicesDataGridView.RowTemplate.Height = 24;
+            this.DevicesDataGridView.Size = new System.Drawing.Size(576, 295);
+            this.DevicesDataGridView.TabIndex = 19;
+            this.DevicesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DevicesDataGridView_CellContentClick);
+            this.DevicesDataGridView.UserAddedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.DevicesDataGridView_UserAddedRow);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(82, 24);
+            this.toolStripButton1.Text = "Обновить";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1173, 517);
-            this.Controls.Add(this.ProDevicesDataGredView);
             this.Controls.Add(this.DevicesDataGridView);
+            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.ProDevicesDataGredView);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonSort);
@@ -304,11 +328,18 @@
             this.Controls.Add(this.buttonAdd1);
             this.Controls.Add(this.buttonDelet);
             this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.DevicesDataGridView)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ProDevicesDataGredView)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DevicesDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,12 +363,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NumberProperties;
         private System.Windows.Forms.DataGridViewTextBoxColumn Properties;
         private System.Windows.Forms.DataGridViewTextBoxColumn Meaning;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameOne;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cost;
-        public System.Windows.Forms.DataGridView DevicesDataGridView;
         public System.Windows.Forms.DataGridView ProDevicesDataGredView;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        public System.Windows.Forms.DataGridView DevicesDataGridView;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 
