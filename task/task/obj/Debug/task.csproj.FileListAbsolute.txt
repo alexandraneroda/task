@@ -70,7 +70,6 @@ D:\savushkin\task\task\task\bin\Debug\System.Buffers.xml
 D:\savushkin\task\task\task\bin\Debug\System.Memory.xml
 D:\savushkin\task\task\task\bin\Debug\System.Numerics.Vectors.xml
 D:\savushkin\task\task\task\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\savushkin\task\task\task\obj\Debug\task.csproj.AssemblyReference.cache
 D:\savushkin\task\task\task\obj\Debug\task.csproj.SuggestedBindingRedirects.cache
 D:\savushkin\task\task\task\obj\Debug\task.Form1.resources
 D:\savushkin\task\task\task\obj\Debug\task.Properties.Resources.resources
@@ -83,3 +82,4 @@ D:\savushkin\task\task\task\obj\Debug\task.Form3.resources
 D:\savushkin\task\task\task\obj\Debug\task.FormProperties.resources
 D:\savushkin\task\task\task\bin\Debug\Database.mdf
 D:\savushkin\task\task\task\bin\Debug\Database_log.ldf
+D:\savushkin\task\task\task\obj\Debug\task.csproj.AssemblyReference.cache
