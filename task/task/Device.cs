@@ -6,45 +6,40 @@ using System.Threading.Tasks;
 
 namespace task
 {
-    public interface IDevice
+    interface IDevice
     {
-        string Name { get; }
-
-        Device.Types Type { get; set; }
-
-        double Price { get; set; }
-
+        void Device();
     }
 
-    public class Device : IDevice
+    class Device : IDevice
     {
-        private string name = string.Empty;
+        string Name;
 
-        public Device(string name)
+        string Type;
+
+        string Price;
+        void IDevice.Device()
         {
-            this.name = name;
+            this.name = Name;
+            this.type = Type;
+            this.price = Price;
+        }
+         public string name
+        {
+            get { return Name; }
+            set { Name = value; }
         }
 
-        public string Name { get { return name; } }
-
-        public Types Type { get; set; } = Types.None;
-
-        public double Price { get; set; }
-
-        public enum Types
+        public string type
         {
-            None = 0,
-            Printer = 1,
-            Camera = 2,
-            PLC = 3,
+            get { return Type; }
+            set { Type = value; }
         }
-    }
 
-    public class Camera : Device
-    {
-        public Camera(string name) : base(name)
+        public string price
         {
-            Type = Types.Camera;
+            get { return Price; }
+            set { Price = value; }
         }
     }
 }
