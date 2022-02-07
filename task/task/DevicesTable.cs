@@ -12,9 +12,9 @@ namespace task
 
         public DevicesTable()
         {
-            //Devices.Add(new Device("name1") { Type = Device.Types.None, Price = 10 });
-            //Devices.Add(new Device("name2") { Type = Device.Types.None, Price = 20 });
-            //Devices.Add(new Device("name3") { Type = Device.Types.None, Price = 310 });
+            Devices.Add(new Device("Panasonic") { Type = Device.Types.Camera, Price = 10 });
+            Devices.Add(new Device("Sooner") { Type = Device.Types.Printer, Price = 20 });
+            Devices.Add(new Device("Dream") { Type = Device.Types.Camera, Price = 310 });
         }
 
         public void Add(IDevice device)

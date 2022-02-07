@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonDelet = new System.Windows.Forms.Button();
             this.buttonAdd1 = new System.Windows.Forms.Button();
@@ -46,8 +47,14 @@
             this.Properties = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Meaning = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DevicesDataGridView = new System.Windows.Forms.DataGridView();
+            this.deviceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.deviceBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.typesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ProDevicesDataGredView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DevicesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deviceBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deviceBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonAdd
@@ -74,7 +81,6 @@
             this.buttonDelet.TabIndex = 1;
             this.buttonDelet.Text = "Удалить\r\n";
             this.buttonDelet.UseVisualStyleBackColor = false;
-            this.buttonDelet.Click += new System.EventHandler(this.buttonDelet_Click);
             // 
             // buttonAdd1
             // 
@@ -87,7 +93,6 @@
             this.buttonAdd1.TabIndex = 2;
             this.buttonAdd1.Text = "Добавить\r\n";
             this.buttonAdd1.UseVisualStyleBackColor = false;
-            this.buttonAdd1.Click += new System.EventHandler(this.buttonAdd1_Click);
             // 
             // buttonAdd2
             // 
@@ -100,7 +105,6 @@
             this.buttonAdd2.TabIndex = 3;
             this.buttonAdd2.Text = "Удалить";
             this.buttonAdd2.UseVisualStyleBackColor = false;
-            this.buttonAdd2.Click += new System.EventHandler(this.buttonAdd2_Click);
             // 
             // buttonInExel
             // 
@@ -249,10 +253,18 @@
             this.DevicesDataGridView.RowTemplate.Height = 24;
             this.DevicesDataGridView.Size = new System.Drawing.Size(576, 295);
             this.DevicesDataGridView.TabIndex = 19;
-            this.DevicesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DevicesDataGridView_CellContentClick);
-            this.DevicesDataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DevicesDataGridView_CellValueChanged);
-            this.DevicesDataGridView.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.DevicesDataGridView_EditingControlShowing);
-            this.DevicesDataGridView.UserAddedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.DevicesDataGridView_UserAddedRow);
+            // 
+            // deviceBindingSource
+            // 
+            this.deviceBindingSource.DataSource = typeof(task.Device);
+            // 
+            // deviceBindingSource1
+            // 
+            this.deviceBindingSource1.DataSource = typeof(task.Device);
+            // 
+            // typesBindingSource
+            // 
+            this.typesBindingSource.DataSource = typeof(task.Device.Types);
             // 
             // Form1
             // 
@@ -281,6 +293,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ProDevicesDataGredView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DevicesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deviceBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deviceBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,6 +321,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Meaning;
         public System.Windows.Forms.DataGridView ProDevicesDataGredView;
         public System.Windows.Forms.DataGridView DevicesDataGridView;
+        private System.Windows.Forms.BindingSource deviceBindingSource;
+        private System.Windows.Forms.BindingSource deviceBindingSource1;
+        private System.Windows.Forms.BindingSource typesBindingSource;
     }
 }
 
