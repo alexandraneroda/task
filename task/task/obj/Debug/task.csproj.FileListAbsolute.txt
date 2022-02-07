@@ -78,8 +78,4 @@ D:\savushkin\task\task\task\obj\Debug\task.csproj.CoreCompileInputs.cache
 D:\savushkin\task\task\task\obj\Debug\task.csproj.CopyComplete
 D:\savushkin\task\task\task\obj\Debug\task.exe
 D:\savushkin\task\task\task\obj\Debug\task.pdb
-D:\savushkin\task\task\task\obj\Debug\task.Form3.resources
-D:\savushkin\task\task\task\obj\Debug\task.FormProperties.resources
-D:\savushkin\task\task\task\bin\Debug\Database.mdf
-D:\savushkin\task\task\task\bin\Debug\Database_log.ldf
 D:\savushkin\task\task\task\obj\Debug\task.csproj.AssemblyReference.cache

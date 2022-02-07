@@ -16,9 +16,11 @@ namespace task
 {
     public partial class Form1 : Form
     {
+
         private bool newRowAdding = false;
         private readonly string CONFIG_PUTH = $"{Environment.CurrentDirectory}\\config.json";
         private static DevicesTable devicesTable;
+        
 
 
         public Form1()
@@ -27,28 +29,8 @@ namespace task
             devicesTable = new DevicesTable();
         }
 
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
-            Form3 frm3 = new Form3(this); 
-            frm3.Show();
-        }
-
-        private void buttonDelet_Click(object sender, EventArgs e)
-        {
-            DevicesDataGridView.Rows.Clear();
-        }
-
-        private void buttonAdd1_Click(object sender, EventArgs e)
-        {
-            FormProperties frmpr = new FormProperties(this);
-            frmpr.Show();
-        }
-
-        private void buttonAdd2_Click(object sender, EventArgs e)
-        {
-            ProDevicesDataGredView.Rows.Clear();
-        }
-
+        DataTable table = new DataTable();
+        int rowIndex;
         private void LoadData()
         {
             DevicesDataGridView.DataSource = devicesTable.Devices;
@@ -59,30 +41,20 @@ namespace task
             LoadData();
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void buttonAdd_Click(object sender, EventArgs e)
         {
+           //DevicesDataGridView.Rows.Add(Name.Text, Type.Text, Price.Text);
 
         }
 
-        private void DevicesDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e) //Обработка любых нажатий на ячейку
+        private void AddRow(string name, string type, string price)
         {
+            String[] row = {name, type, price};
 
+           
         }
 
-        private void DevicesDataGridView_UserAddedRow(object sender, DataGridViewRowEventArgs e)
-        {
-    
-        }
-
-        private void DevicesDataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
-        {
-    
-        }
-
-        private void DevicesDataGridView_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
-        {
-        
-        }
+       
 
         private void Column_KeyPress(object sender, KeyPressEventArgs e)
         {
