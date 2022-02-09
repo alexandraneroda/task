@@ -12,7 +12,7 @@ namespace task
 
         string Type { get; set; }
 
-        double Price { get; set; }
+        float Price { get; set; }
 
     }
 
