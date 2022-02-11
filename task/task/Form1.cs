@@ -45,6 +45,11 @@ namespace task
         {
            //DevicesDataGridView.Rows.Add(Name.Text, Type.Text, Price.Text);
 
+            this.Hide();
+
+            AddForm addForm = new AddForm();    
+            addForm.Show();
+
         }
 
         private void AddRow(string name, string type, string price)
