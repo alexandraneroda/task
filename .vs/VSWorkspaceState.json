@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\task",
+    "\\task\\task",
+    "\\task\\task\\bin"
   ],
-  "SelectedNode": "\\task.sln",
+  "SelectedNode": "\\task",
   "PreviewInSolutionExplorer": false
 }

@@ -2,42 +2,32 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace task
 {
-    public interface IDevice
-    {
-        string Name { get; set;  }
-
-        string Type { get; set; }
-
-        double Price { get; set; }
-
-    }
+   
 
     public class Device : IDevice
     {
         private string name = string.Empty;
-
+        static int nextId;
+        public int deviceId { get; private set; }
         public Device(string name)
         {
             this.name = name;
+            this.deviceId = deviceId; //автоопределение id
+            deviceId = Interlocked.Increment(ref nextId);
         }
-
         public string Name { get { return name; } }
 
         public Types Type { get; set; } = Types.None;
 
         public double Price { get; set; }
 
-        public enum Types
-        {
-            None = 0,
-            Printer = 1,
-            Camera = 2,
-            PLC = 3,
-        }
+        public int Number { get { return deviceId; } }
+       
     }
 
     public class Camera : Device
