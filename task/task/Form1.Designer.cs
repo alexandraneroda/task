@@ -264,7 +264,7 @@
             // 
             // typesBindingSource
             // 
-            this.typesBindingSource.DataSource = typeof(task.Device.Types);
+            this.typesBindingSource.DataSource = typeof(task.Types);
             // 
             // Form1
             // 

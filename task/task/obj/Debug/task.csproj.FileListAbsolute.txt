@@ -79,3 +79,4 @@ D:\savushkin\task\task\task\obj\Debug\task.csproj.CopyComplete
 D:\savushkin\task\task\task\obj\Debug\task.exe
 D:\savushkin\task\task\task\obj\Debug\task.pdb
 D:\savushkin\task\task\task\obj\Debug\task.csproj.AssemblyReference.cache
+D:\savushkin\task\task\task\obj\Debug\task.AddForm.resources

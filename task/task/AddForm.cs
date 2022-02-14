@@ -16,5 +16,9 @@ namespace task
         {
             InitializeComponent();
         }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     }
 }

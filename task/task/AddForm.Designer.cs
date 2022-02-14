@@ -31,17 +31,30 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.AddDevicesButton = new System.Windows.Forms.Button();
+=======
+            this.NametextBox = new System.Windows.Forms.TextBox();
+            this.TypetextBox = new System.Windows.Forms.TextBox();
+            this.PricetextBox = new System.Windows.Forms.TextBox();
+            this.AddDevicesButton = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.NumbertextBox = new System.Windows.Forms.TextBox();
+>>>>>>> Stashed changes
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+<<<<<<< Updated upstream
             this.label1.Location = new System.Drawing.Point(13, 60);
+=======
+            this.label1.Location = new System.Drawing.Point(12, 95);
+>>>>>>> Stashed changes
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 20);
             this.label1.TabIndex = 0;
@@ -51,7 +64,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+<<<<<<< Updated upstream
             this.label2.Location = new System.Drawing.Point(13, 122);
+=======
+            this.label2.Location = new System.Drawing.Point(13, 137);
+>>>>>>> Stashed changes
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 20);
             this.label2.TabIndex = 1;
@@ -67,6 +84,7 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Цена:";
             // 
+<<<<<<< Updated upstream
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(115, 60);
@@ -87,6 +105,28 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(320, 22);
             this.textBox3.TabIndex = 5;
+=======
+            // NametextBox
+            // 
+            this.NametextBox.Location = new System.Drawing.Point(115, 93);
+            this.NametextBox.Name = "NametextBox";
+            this.NametextBox.Size = new System.Drawing.Size(320, 22);
+            this.NametextBox.TabIndex = 3;
+            // 
+            // TypetextBox
+            // 
+            this.TypetextBox.Location = new System.Drawing.Point(115, 135);
+            this.TypetextBox.Name = "TypetextBox";
+            this.TypetextBox.Size = new System.Drawing.Size(320, 22);
+            this.TypetextBox.TabIndex = 4;
+            // 
+            // PricetextBox
+            // 
+            this.PricetextBox.Location = new System.Drawing.Point(115, 181);
+            this.PricetextBox.Name = "PricetextBox";
+            this.PricetextBox.Size = new System.Drawing.Size(320, 22);
+            this.PricetextBox.TabIndex = 5;
+>>>>>>> Stashed changes
             // 
             // AddDevicesButton
             // 
@@ -97,15 +137,44 @@
             this.AddDevicesButton.Text = "Добавить";
             this.AddDevicesButton.UseVisualStyleBackColor = true;
             // 
+<<<<<<< Updated upstream
+=======
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(13, 49);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Номер:";
+            // 
+            // NumbertextBox
+            // 
+            this.NumbertextBox.Location = new System.Drawing.Point(115, 49);
+            this.NumbertextBox.Name = "NumbertextBox";
+            this.NumbertextBox.Size = new System.Drawing.Size(320, 22);
+            this.NumbertextBox.TabIndex = 8;
+            // 
+>>>>>>> Stashed changes
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 283);
+<<<<<<< Updated upstream
             this.Controls.Add(this.AddDevicesButton);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+=======
+            this.Controls.Add(this.NumbertextBox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.AddDevicesButton);
+            this.Controls.Add(this.PricetextBox);
+            this.Controls.Add(this.TypetextBox);
+            this.Controls.Add(this.NametextBox);
+>>>>>>> Stashed changes
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -121,9 +190,18 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+<<<<<<< Updated upstream
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button AddDevicesButton;
+=======
+        private System.Windows.Forms.TextBox NametextBox;
+        private System.Windows.Forms.TextBox TypetextBox;
+        private System.Windows.Forms.TextBox PricetextBox;
+        private System.Windows.Forms.Button AddDevicesButton;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox NumbertextBox;
+>>>>>>> Stashed changes
     }
 }
