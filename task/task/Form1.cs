@@ -20,7 +20,7 @@ namespace task
         private bool newRowAdding = false;
         private readonly string CONFIG_PUTH = $"{Environment.CurrentDirectory}\\config.json";
         private static DevicesTable devicesTable;
-        
+        AddForm addForm;
 
 
         public Form1()
@@ -45,9 +45,7 @@ namespace task
         {
            //DevicesDataGridView.Rows.Add(Name.Text, Type.Text, Price.Text);
 
-            this.Hide();
-
-            AddForm addForm = new AddForm();    
+            addForm = new AddForm();    
             addForm.Show();
 
         }
