@@ -30,7 +30,7 @@ namespace task
         }
 
         DataTable table = new DataTable();
-        int rowIndex;
+       
         private void LoadData()
         {
             DevicesDataGridView.DataSource = devicesTable.Devices;
@@ -43,10 +43,13 @@ namespace task
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-           //DevicesDataGridView.Rows.Add(Name.Text, Type.Text, Price.Text);
 
             addForm = new AddForm();    
-            addForm.Show();
+            addForm.Show(); 
+
+            //IDevice device = devicesTable.Devices[0];
+
+            //DevicesDataGridView.Rows.Add(NameTextBox.Text, TypeTextBox.Text, PriceTextBox.Text);
 
         }
 

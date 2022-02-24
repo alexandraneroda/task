@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace task
 {
-   
+    
 
     public class Device : IDevice
     {
         private string name = string.Empty;
         static int nextId;
+     
+
         public int deviceId { get; private set; }
         public Device(string name)
         {
