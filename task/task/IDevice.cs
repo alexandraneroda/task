@@ -8,12 +8,12 @@ namespace task
 {
     public interface IDevice
     {
-        int Number { get; } 
-        string Name { get; }
 
-        Types Type { get; set; }
-
+        int Number { get; set; }
+        string Name { get; set; }
+        string Type { get; set; }
         double Price { get; set; }
+
 
     }
 }
